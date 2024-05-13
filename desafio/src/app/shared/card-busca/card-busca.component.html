@@ -1,14 +1,12 @@
 <mat-card class="card-busca">
-  <img mat-card-image src="assets/Imagens/ricky.webp" alt="imagem teste">
+  <img mat-card-image src="{{ character.image }}" alt="Imagem do personagem">
   <mat-card-content>
     <ul>
-      <li>Nome:</li>
-      <li>Última localização conhecida:</li>
-      <li>Visto pela primeira vez em:</li>
+      <li>{{character.name}}</li>
+      <li> {{character.status }}</li>
     </ul>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-flat-button color="primary">Ver Detalhes</button>
+    <button mat-flat-button color="primary">VER DETALHES</button>
   </mat-card-actions>
 </mat-card>
-

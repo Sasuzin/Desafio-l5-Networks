@@ -20,6 +20,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import { PersonagensComponent } from './pages/home/personagens/personagens.component';
 
 
 @NgModule({
@@ -34,6 +36,7 @@ import { MatInputModule } from '@angular/material/input';
     CardBuscaComponent,
     CardDepoimentoComponent,
     FormBuscaComponent,
+    PersonagensComponent,
 
   ],
   imports: [
@@ -45,7 +48,8 @@ import { MatInputModule } from '@angular/material/input';
     MatButtonToggleModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
 
   ],
   providers: [
