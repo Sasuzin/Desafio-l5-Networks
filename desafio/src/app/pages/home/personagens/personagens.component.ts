@@ -8,16 +8,14 @@ import { Character } from '../../../core/types/type';
   styleUrl: './personagens.component.css'
 })
 export class PersonagensComponent implements OnInit {
-
- 
-  characters!: Character[];
+  characters: Character[] = []
   constructor(private service: CharactersService) {
 
   }
   ngOnInit(): void {
     this.service.listar().subscribe(
-      res => {
-        this.characters = res;
+      (response) => {
+        this.characters = response.results;
       }
     )
   }

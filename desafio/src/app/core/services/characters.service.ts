@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Character } from '../types/type'
+import { ApiResponse } from '../types/type'
 import { environment } from '../../../environments/environment.development';
 
 @Injectable({
@@ -15,7 +15,7 @@ export class CharactersService {
    }
 
 
-  listar () : Observable<Character[]> {
-    return this.httpClient.get<Character[]>(`${this.apiUrl}/character`)
+  listar () : Observable<ApiResponse> {
+    return this.httpClient.get<ApiResponse>(`${this.apiUrl}/character`)
   }
 }

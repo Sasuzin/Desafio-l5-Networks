@@ -7,11 +7,11 @@ import { CharactersService } from '../../core/services/characters.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  constructor ( private servicoCharacters: CharactersService) {
+  constructor ( private servicoCharacter: CharactersService) {
 
   }
   ngOnInit(): void {
-    this.servicoCharacters.listar().subscribe(
+    this.servicoCharacter.listar().subscribe(
       resposta => {
         console.log(resposta)
       }

@@ -7,4 +7,8 @@ import { Character } from '../../core/types/type';
 })
 export class CardBuscaComponent {
   @Input () character!: Character;
+
+  getImageUrl(character: Character): string {
+    return character.image ? character.image : 'assets/placeholder.jpg';
+  }
 }
