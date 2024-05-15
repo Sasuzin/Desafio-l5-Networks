@@ -1,0 +1,14 @@
+<app-banner src="assets/Imagens/bannermorty.jpg" alt="Banner principal da aplicação"></app-banner>
+<app-container>
+  <h2>Consumindo a API Ricky e Morty</h2>
+  <app-form-busca></app-form-busca>
+  <div class="card-wrapper">
+    <ng-container *ngFor="let character of listCharacters">
+      <app-card-busca [character]="character"></app-card-busca>
+    </ng-container>
+  <h2>Desenvolvedores</h2>
+  <div class="card-wrapper">
+    <app-card-depoimento></app-card-depoimento>
+  </div>
+</div>
+</app-container>
