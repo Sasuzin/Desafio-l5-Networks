@@ -7,8 +7,11 @@ import { Character } from '../../../core/types/type';
   templateUrl: './personagens.component.html',
   styleUrl: './personagens.component.css'
 })
+
 export class PersonagensComponent implements OnInit {
   characters: Character[] = []
+
+
   constructor(private service: CharactersService) {
 
   }
