@@ -1,12 +1,6 @@
 
 # l5-Networks Challenge
 
-
-## Screenshots
-
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://prnt.sc/CHdKt1ASYSzc))
-
-
 ## Run Locally
 
 Clone the project
